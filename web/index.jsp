@@ -12,6 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+            <%@include file="WEB-INF/jspf/header.jspf" %>
+    <h2>Nome:Danilo Novaes Santana</h2>
+    <h2>RA: 1290481922012</h2>
+    <a href=""
+    
     </body>
 </html>

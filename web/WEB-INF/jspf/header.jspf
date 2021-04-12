@@ -1,3 +1,19 @@
 <%-- any content can be specified here e.g.: --%>
-<%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+<%
+    if(request.getParameter("login")!=null){
+        %>bem vindo, <%request.getParameter("name");
+        
+        %><form>
+            <input type="submit" name="logout" value="logout">
+</form><%
+    response.sendRedirect("disciplina.jspf");
+        if(request.getParameter("logout") != null){
+            remove.getAttribute("name");
+            response.sendRedirect("index.jsp");
+        }
+    }
+%>
+<form>
+    <input type="text" name="name">
+    <input type="submit" name="login" value="login"> 
+</form>
